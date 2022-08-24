@@ -227,6 +227,17 @@ $ gradle jbang --jbang-script hello.jsh --jbang-args="Hello world"
 
 The plugin documentation and more examples are available here: https://github.com/jbangdev/jbang-gradle-plugin
 
+== Ansible install
+
+Ansible is a popular tool for installing and managing software on a system.
+
+[source, yml]
+----
+- name: Install jbang
+  community.general.homebrew:
+    name: jbangdev/tap/jbang
+----
+
 == Manual install
 
 Unzip the https://github.com/jbangdev/jbang/releases/latest[latest binary release], add the `jbang-<version>/bin` folder to your `$PATH` and you are set.
